@@ -22,7 +22,6 @@ function closeMobileMenu() {
 
 navToggle?.addEventListener('click', () => {
   const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-
   navToggle.setAttribute('aria-expanded', String(!isOpen));
   navMenu?.classList.toggle('is-open', !isOpen);
   document.body.classList.toggle('nav-open', !isOpen);
