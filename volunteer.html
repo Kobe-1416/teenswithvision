@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Volunteer application page for Teens With Vision." />
+  <title>Teens With Vision | Volunteer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header is-scrolled" data-header>
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Teens With Vision home">
+          <img
+              class="brand-logo"
+              src="assets/Logos/Official Icon.jpeg"
+              alt="Teens With Vision logo">
+
+          <span class="brand-name">
+              Teens With Vision
+          </span>
+      </a>
+      <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          data-nav-toggle>
+
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+
+      <nav class="site-nav"
+          id="site-menu"
+          data-nav-menu>
+
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About Us</a>
+          <a href="index.html#programs">Programs</a>
+          <a href="index.html#impact">Impact</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#contact">Contact</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-pad">
+      <div class="container volunteer-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Become a Volunteer</p>
+          <h2>Volunteer application.</h2>
+          <p>This page is ready for your supplied application form. Replace the placeholder link or embed with the final version.</p>
+        </div>
+
+        <div class="volunteer-copy" id="application-form">
+          <h3>Application section</h3>
+          <p>Why volunteer, what to expect, and how to get involved can go here beside the form.</p>
+
+          <form class="contact-form" id="volunteer-form">
+            <label>
+              <span>Full name</span>
+              <input type="text" required placeholder="Full name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+              <span>Why do you want to volunteer?</span>
+              <textarea rows="5" required placeholder="Tell us briefly..."></textarea>
+            </label>
+            <a class="btn btn-secondary" href="#" data-ripple>Open supplied form link</a>
+            <button class="btn btn-primary" type="submit" data-ripple>Submit</button>
+            <p class="form-status" id="volunteer-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <script>
+    const form = document.getElementById('volunteer-form');
+    const statusEl = document.getElementById('volunteer-status');
+
+    form?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        statusEl.textContent =
+            'Application submitted. Confirmation received.';
+    });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
