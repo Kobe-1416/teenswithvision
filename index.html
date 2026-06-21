@@ -16,14 +16,8 @@
   <header class="site-header" data-header>
     <div class="nav-wrap">
       <a class="brand" href="index.html" aria-label="Teens With Vision home">
-          <img
-              class="brand-logo"
-              src="assets/Logos/Official Icon.jpeg"
-              alt="Teens With Vision logo">
-
-          <span class="brand-name">
-              Teens With Vision
-          </span>
+        <img class="brand-logo" src="assets/Logos/Official Icon.jpeg" alt="Teens With Vision logo" />
+        <span class="brand-name">Teens With Vision</span>
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
@@ -33,10 +27,8 @@
       <nav class="site-nav" id="site-menu" data-nav-menu>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
-        <a href="#team">Team</a>
         <a href="#programs">Programs</a>
-        <a href="#impact">Impact</a>
-        <a href="#volunteer">Become a Volunteer</a>
+        <a href="#donate">Donate</a>
         <a href="#contact">Contact Us</a>
         <a href="gallery.html">Gallery</a>
       </nav>
@@ -48,27 +40,25 @@
       <div class="hero-grid container">
         <div class="hero-copy reveal">
           <p class="eyebrow">Youth-led • Community-driven • Driving Change</p>
-          <h1>Building stronger families and brighter futures.</h1>
+          <h1>Building stronger communities and brighter futures.</h1>
           <p class="hero-lead">Teens With Vision supports young people and households through four focused impact areas: family support, food security, education & skills, and care & wellbeing.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#programs" data-ripple>Explore programs</a>
             <a class="btn btn-secondary" href="#volunteer" data-ripple>Join as a volunteer</a>
           </div>
-
           <dl class="impact-strip" aria-label="Organisation overview">
             <div><dt>4</dt><dd>Core programs</dd></div>
             <div><dt>1</dt><dd>Shared mission</dd></div>
             <div><dt>Youth-led</dt><dd>Community ownership</dd></div>
           </dl>
         </div>
+      </div>
+    </section>
 
+    <section class="feature-image section-pad" aria-label="Featured community image">
+      <div class="container">
         <div class="hero-visual reveal delay-1">
-          <div class="logo-grid" aria-label="Program icons">
-            <div class="logo-circle"><img src="assets/Logos/Family.png" alt="Family support icon" /></div>
-            <div class="logo-circle"><img src="assets/Logos/Food.png" alt="Food security icon" /></div>
-            <div class="logo-circle"><img src="assets/Logos/Education.png" alt="Education icon" /></div>
-            <div class="logo-circle"><img src="assets/Logos/Well-Being.png" alt="Care and wellbeing icon" /></div>
-          </div>
+          <img src="assets/Media/22.jpeg" alt="Young people in the community engaging in a support activity" />
           <div class="floating-card">
             <span class="dot"></span>
             <p>“Where one is born does not have to determine where one ends up.”</p>
@@ -78,14 +68,54 @@
     </section>
 
     <section class="about section-pad" id="about">
-      <div class="container two-column">
+      <div class="container about-grid">
         <div class="section-heading reveal">
           <p class="eyebrow">About Us</p>
           <h2>Who we are and why we exist.</h2>
         </div>
-        <div class="mission-copy reveal delay-1">
-          <p><strong>Our story.</strong> Teens With Vision is a youth-led, community-based organisation shaped by lived experience in township communities. We understand the barriers that keep young people from learning, growing, and thriving.</p>
-          <p><strong>Our purpose.</strong> We work to strengthen households, remove barriers to education, improve wellbeing, and connect communities with practical support that creates long-term change.</p>
+
+        <div class="about-content reveal delay-1">
+          <article class="about-card">
+            <p><strong>Our story.</strong> Our organization was founded by a group of visionary teens led by Neo Cholo in Mamelodi, Pretoria East. Our organization is a youth-led initiative born from the very communities we serve. Having experienced the challenges of being from a disadvantaged background first-hand, our founders established a CBO.</p>
+            
+            <div class="read-more-content" id="about-story-more">
+              <div>
+                <p>to dismantle the socio-economic economic barriers that hinder the educational and economic development of the township youth. We are dedicated to fighting poverty and socio-economic hardships through sustainable, community-driven interventions.</p>
+              </div>
+            </div>
+            <button class="read-more-btn" type="button" aria-expanded="false" aria-controls="about-story-more" data-read-more-toggle>
+              <span class="label">Read More</span>
+              <span class="chevron" aria-hidden="true">▾</span>
+            </button>
+          </article>
+
+          <article class="about-card">
+            <p><strong>Our mission.</strong> Our mission is to free our communities from poverty and social illness by empowering the youth through providing holistic support system that addresses food insecurity, educational gaps, health challenges and domestic instability.</p>
+            
+            <div class="read-more-content" id="about-mission-more">
+              <div>
+                <p>Making sure that our townships are clean, safe and consist of a thriving community.</p>
+              </div>
+            </div>
+            <button class="read-more-btn" type="button" aria-expanded="false" aria-controls="about-mission-more" data-read-more-toggle>
+              <span class="label">Read More</span>
+              <span class="chevron" aria-hidden="true">▾</span>
+            </button>
+          </article>
+
+          <article class="about-card">
+            <p><strong>Our vision.</strong> We envision transformed townships whereby the cycle of generational poverty is completely broken. Imagine our local townships not as areas of disadvantage, but as vibrant hubs filled with academic excellence and skilled labourers of artisan craftsmanship, where their expertise drive economic innovation and development.</p>
+            
+            <div class="read-more-content" id="about-vision-more">
+              <div>
+                <p>We see a future where child-headed homes are a thing of the past, whereby every household is secure and stable. A future where young people from ko kasi being afforded a real fair chance in life; walking confidently into adulthood equipped with tertiary degrees, specialized skills and being able to build thriving enterprises as entrepreneurs. In this reality, where one is born doesn't dictates their destination and economic uplift and financial freedom is possible for all.</p>
+              </div>
+            </div>
+            <button class="read-more-btn" type="button" aria-expanded="false" aria-controls="about-vision-more" data-read-more-toggle>
+              <span class="label">Read More</span>
+              <span class="chevron" aria-hidden="true">▾</span>
+            </button>
+          </article>
         </div>
       </div>
     </section>
@@ -131,7 +161,7 @@
             <div class="detail-content">
               <div>
                 <h3>Program Story</h3>
-                <p>This program exists because many households face instability, isolation, and limited access to support networks. It responds to family stress by connecting people to practical assistance and community care.</p>
+                <p>We advocate for social welfare and psychosocial services to the vulnerable kids, like child-headed homes, or those facing abuse, which gives them the safety net. As clearing the immediate trauma blocking a child's development, we develop a society of responsible functional citizens. As a stable home puts down the heavy burdens of survival and allows one to pick up their books and change their lives.</p>
                 <p><strong>Problem addressed:</strong> household instability, lack of guidance, and vulnerable children needing support.</p>
               </div>
               <div class="gallery-mini">
@@ -151,7 +181,8 @@
             <div class="detail-content">
               <div>
                 <h3>Program Story</h3>
-                <p>Food support exists because hunger affects concentration, attendance, and dignity. The program helps families and children access meals and emergency food relief when it matters most.</p>
+                <p><i>The story behind it:</i> As Teens growing in Mamelodi, we saw our own friends going to bed hungry, waking up with no energy to even look at a textbook. As a learner you cannot focus when you are hungry thus even writing an exam on an empty stomach is close to impossible. This leads to obtaining lower grades or even sometimes failing thus one cannot achieve educational prosperity under such circumstances.</p>
+                <p><strong>The Nutritional Support Initiatives:</strong> Fighting hunger through soup kitchens, school feeding scheme advocacy and the distribution of food parcels and food vouchers to vulnerable families. As we believe that feeding our youth gives them the strength to fight for their dreams.</p>
                 <p><strong>Problem addressed:</strong> hunger, food shortages, and the daily pressure of unreliable meals.</p>
               </div>
               <div class="gallery-mini">
@@ -171,7 +202,8 @@
             <div class="detail-content">
               <div>
                 <h3>Program Story</h3>
-                <p>Education support removes barriers that stop learners from participating fully. The program helps young people with access, skills, guidance, and opportunities to grow.</p>
+                <p><i>The story behind it:</i> Talent is evenly distributed but opportunity is not. Many brilliant township kids missed out on higher education because of lack of school uniform, stationery, university application fees or guidance on how to apply for bursaries.</p>
+                <p><strong>Academic excellence and Career Development:</strong> We focus on improving literacy, providing school uniforms and stationery, facilitating assisted tertiary and bursary applications. We also connect the youth to career fairs, bursary fairs and skills development workshops. In doing so this program provides the literal keys to the economy through the efforts to remove academic barriers.</p>
                 <p><strong>Problem addressed:</strong> educational barriers, lack of resources, and limited skills pathways.</p>
               </div>
               <div class="gallery-mini">
@@ -191,7 +223,8 @@
             <div class="detail-content">
               <div>
                 <h3>Program Story</h3>
-                <p>This program promotes dignity, wellness, and safety through support that improves emotional and physical wellbeing in the community.</p>
+                <p><i>The story behind it:</i> It broke our hearts to see girls missing school for a week every month just because they couldn't afford pads or guys losing their way, ending up become drug addicts or commit suicide because of stress and depression or children being sick because of staying near dumping grounds.</p>
+                <p><strong>Health, Wellness and Environmental Stewardship initiatives:</strong> We focus on ensuring dignity through providing sanitary pads and basic hygiene packs, advocating for mental health illness awareness and leading community clean-up campaigns to protect our local environment. As restoring personal and environmental dignity directly impacts a youth's self worth and the confidence they have in claiming spaces and participating in their education and job market.</p>
                 <p><strong>Problem addressed:</strong> health challenges, stress, neglect, and poor wellbeing.</p>
               </div>
               <div class="gallery-mini">
@@ -201,51 +234,6 @@
               </div>
             </div>
           </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="team section-pad" id="team">
-      <div class="container">
-        <div class="section-heading center reveal">
-          <p class="eyebrow">Team</p>
-          <h2>The people behind the work.</h2>
-          <p>Replace the sample cards with the actual team photographs, names, roles, and short biographies.</p>
-        </div>
-
-        <div class="team-grid">
-          <article class="team-card reveal">
-            <img src="assets/Media/14.jpeg" alt="Team member photograph" />
-            <div>
-              <h3>Neo Cholo</h3>
-              <p class="role">Founder &amp; Community Lead</p>
-              <p>Joined to turn lived experience into action and build a safer path for young people in the community.</p>
-            </div>
-          </article>
-          <article class="team-card reveal delay-1">
-            <img src="assets/Media/15.jpeg" alt="Team member photograph" />
-            <div>
-              <h3>Team Member Name</h3>
-              <p class="role">Program Coordinator</p>
-              <p>Joined to support outreach, coordinate projects, and keep community responses organised and consistent.</p>
-            </div>
-          </article>
-          <article class="team-card reveal delay-2">
-            <img src="assets/Media/16.jpeg" alt="Team member photograph" />
-            <div>
-              <h3>Team Member Name</h3>
-              <p class="role">Volunteer Lead</p>
-              <p>Joined to connect volunteers to meaningful work and make participation simple, safe, and useful.</p>
-            </div>
-          </article>
-          <article class="team-card reveal delay-3">
-            <img src="assets/Media/17.jpeg" alt="Team member photograph" />
-            <div>
-              <h3>Team Member Name</h3>
-              <p class="role">Outreach &amp; Support</p>
-              <p>Joined to help families, support events, and build trust through consistent community presence.</p>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -279,6 +267,48 @@
             <p>Successful Initiatives</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="partners section-pad" id="partnerships" aria-labelledby="partners-title">
+      <div class="container partners-inner reveal">
+        <div>
+          <p class="eyebrow">Partnerships</p>
+          <h2 id="partners-title">Partner logos will be added here.</h2>
+        </div>
+        <div class="partner-slots" aria-label="Partner logo placeholders">
+          <span>Partner 1</span>
+          <span>Partner 2</span>
+          <span>Partner 3</span>
+          <span>Partner 4</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="donate section-pad" id="donate">
+      <div class="container donate-grid">
+        <div class="donate-copy reveal">
+          <p class="eyebrow">Make a donation</p>
+          <h2>Your support can become food, stationery, dignity packs or application help.</h2>
+          <p>Use the bank-details block below once the official account details are confirmed. Keep the reference simple so donations can be tracked properly.</p>
+          <div class="donate-actions">
+            <a class="btn btn-primary" href="#bank-details" data-ripple>View bank details</a>
+            <a class="btn btn-secondary" href="#contact" data-ripple>Ask how to help</a>
+          </div>
+        </div>
+
+        <aside class="bank-card reveal delay-1" id="bank-details" aria-labelledby="bank-title">
+          <p class="bank-label">Bank transfer</p>
+          <h3 id="bank-title">Donation details</h3>
+          <ul>
+            <li><span>Account name</span><strong>Teens With Vision</strong></li>
+            <li><span>Bank</span><strong>[Add bank name]</strong></li>
+            <li><span>Account number</span><strong>[Add account number]</strong></li>
+            <li><span>Branch code</span><strong>[Add branch code]</strong></li>
+            <li><span>Reference</span><strong>Donation + Your Name</strong></li>
+          </ul>
+          <p class="proof-note">Send proof of payment to <a href="mailto:info@teenswithvision.org.za">info@teenswithvision.org.za</a></p>
+        </aside>
       </div>
     </section>
 
@@ -344,11 +374,56 @@
         </form>
       </div>
     </section>
+
+    <section class="team section-pad" id="team">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Team</p>
+          <h2>The people behind the work.</h2>
+          <p>Replace the sample cards with the actual team photographs, names, roles, and short biographies.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <img src="assets/Media/14.jpeg" alt="Team member photograph" />
+            <div>
+              <h3>Neo Cholo</h3>
+              <p class="role">Founder &amp; Community Lead</p>
+              <p>Joined to turn lived experience into action and build a safer path for young people in the community.</p>
+            </div>
+          </article>
+          <article class="team-card reveal delay-1">
+            <img src="assets/Media/15.jpeg" alt="Team member photograph" />
+            <div>
+              <h3>Team Member Name</h3>
+              <p class="role">Program Coordinator</p>
+              <p>Joined to support outreach, coordinate projects, and keep community responses organised and consistent.</p>
+            </div>
+          </article>
+          <article class="team-card reveal delay-2">
+            <img src="assets/Media/16.jpeg" alt="Team member photograph" />
+            <div>
+              <h3>Team Member Name</h3>
+              <p class="role">Volunteer Lead</p>
+              <p>Joined to connect volunteers to meaningful work and make participation simple, safe, and useful.</p>
+            </div>
+          </article>
+          <article class="team-card reveal delay-3">
+            <img src="assets/Media/17.jpeg" alt="Team member photograph" />
+            <div>
+              <h3>Team Member Name</h3>
+              <p class="role">Outreach &amp; Support</p>
+              <p>Joined to help families, support events, and build trust through consistent community presence.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span data-year></span> TeensWithVision. Youth-led community development.</p>
+      <p>© <span data-year></span> Teens With Vision. Youth-led community development.</p>
       <a href="#home">Back to top</a>
     </div>
   </footer>

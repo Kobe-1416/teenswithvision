@@ -119,20 +119,24 @@ contactForm?.addEventListener('submit', event => {
   formStatus.textContent = 'Opening your email app...';
 });
 
-// Expandable program sections
-document.querySelectorAll('.read-more-btn').forEach(button => {
+// Expandable "Read More" blocks in the About Us section.
+// Each button sits right after its paragraph and controls the
+// .read-more-content panel right after it via aria-controls/id.
+document.querySelectorAll('[data-read-more-toggle]').forEach(button => {
+  const targetId = button.getAttribute('aria-controls');
+  const panel = targetId ? document.getElementById(targetId) : null;
+  const label = button.querySelector('.label');
+
+  if (!panel) return;
+
   button.addEventListener('click', () => {
-    const targetId = button.dataset.target;
-    const section = document.getElementById(targetId);
+    const isOpen = panel.classList.toggle('is-open');
 
-    if (!section) return;
+    button.setAttribute('aria-expanded', String(isOpen));
 
-    section.classList.toggle('is-open');
-
-    button.textContent =
-      section.classList.contains('is-open')
-        ? 'Show Less'
-        : 'Read More';
+    if (label) {
+      label.textContent = isOpen ? 'Show Less' : 'Read More';
+    }
   });
 });
 
